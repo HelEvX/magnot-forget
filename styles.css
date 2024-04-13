@@ -394,12 +394,14 @@ the website, in dark theme
   position: relative;
 }
 
-.zigzag {
-  margin: 0 1rem;
+.home__zigzag-container{
+  display: flex;
+  flex-direction: column;
 }
 
-.zigzag path {
-  stroke: var(--first-color);
+.zigzag {
+  width: 200%;
+  height: 200%;
 }
 
 .home__social-links{
@@ -446,8 +448,12 @@ the website, in dark theme
 }
 
 .zigzag-line {
-  stroke-width: 4;
+  stroke-width: .25rem;
   stroke-linecap: round;
+  animation: flicker 2s infinite alternate;
+}
+
+.zigzag {
   animation: flicker 2s infinite alternate;
 }
 
@@ -1266,9 +1272,6 @@ input:-webkit-autofill {
     width: 300px;
     order: 1;
   }
-  .home__social{
-    top: 30%;
-  }
 
   .about__container{
     column-gap: 2rem;
@@ -1319,8 +1322,7 @@ input:-webkit-autofill {
     padding-right: 7rem;
   }
   .home__social{
-    right: -3rem;
-    row-gap: 4.5rem;
+    row-gap: 2.5rem;
   }
   .home__social-svg{
     stroke:var(--first-color);
