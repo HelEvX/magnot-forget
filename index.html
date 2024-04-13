@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== REMIX ICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== VIDEO POPUP ===============-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>Responsieve website Magnot Forget</title>
+
+</head>
+<body>
+<!--==================== HEADER ====================-->
+<header class="header blur-header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">
+            <object data="assets/img/magnotforget_logo.svg" width="90" height="56"></object>
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link active-link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#about" class="nav__link">About</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#products" class="nav__link">Products</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#faqs" class="nav__link">FAQs</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#contact" class="nav__link">Contact Us</a>
+                </li>
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+
+        <div class="nav__btns">
+            <!-- Theme change button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main class="main">
+    <!--==================== HOME ====================-->
+    <section class="home" id="home">
+        <div class="home__container container grid">
+            <div class="home__img">
+                <div class="svg-container">
+                    <svg width="410" height="435" viewBox="0 0 410 435" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M401.379 0.671046L24.6688 29.9942C20.6449 30.3074 17.4846 33.569 17.2982 37.6007L0.365619 403.951C0.163093 408.333 3.52683 412.061 7.90635 412.308L401.549 434.523C406.137 434.782 410 431.131 410 426.536V8.64692C410 3.98395 406.028 0.309175 401.379 0.671046Z"
+                              fill="url(#paint0_linear_157_619)"/>
+                        <defs>
+                            <linearGradient id="paint0_linear_157_619" x1="205" y1="0" x2="205" y2="435"
+                                            gradientUnits="userSpaceOnUse">
+                                <stop offset="0.309" stop-color="var(--gradient-color1)"/>
+                                <stop offset="1" stop-color="var(--gradient-color2)"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <img src="assets/img/bord-cutout-cc.png" alt="MagnotForget productfoto" id="productfoto">
+            </div>
+
+            <div class="home__data">
+                <h1 class="home__title"> Keep essentials in <br>
+                    sight with <span class="highlight-word">style</span>
+                </h1>
+                <p class="home__description">
+                    Hier schrijf je een korte paragraaf over wat de bezoekers van je website als eerste moeten lezen
+                    voor ze verdergaan.
+                </p>
+                <div class="home__buttons">
+                    <a href="#about" class="button button--flex">
+                        Ontdek <i class="ri-arrow-right-down-line button__icon"></i>
+                    </a>
+                    <a href="#videostory" class="button button--flex button--alt" id="videolink">
+                        Bekijk video <i class="ri-play-circle-fill button__icon" aria-hidden="true"> &nbsp;</i>
+                    </a>
+
+                </div>
+
+                <div class="zigzag">
+                    <svg class="zigzag-svg" width="118" height="25" viewBox="0 0 118 25" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path class="zigzag-line first" d="M38 22.3582L18.5297 2.79395L20.3057 23L2 2"/>
+                        <path class="zigzag-line second" d="M76 22.3582L56.5297 2.79395L58.3057 23L40 2"/>
+                        <path class="zigzag-line third" d="M114 22.3582L94.5297 2.79395L96.3057 23L78 2"/>
+                    </svg>
+                </div>
+
+                <div id="videostory" class="mfp-hide">
+                    <video controls width="853" height="480">
+                        <source src="assets/img/magnotforget-promo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="home__social">
+                <div class="home__social-follow">Volg ons</div>
+                <svg class="zigzag" width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.63054 4.47478L3.58531 1.13551L3.86308 4.58431L1 1"/>
+                </svg>
+
+                <div class="home__social-links">
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== ABOUT ====================-->
+    <section class="about section container" id="about">
+        <div class="about__container grid">
+            <div class="about__img-container">
+                <img src="assets/img/teamfoto.jpg" alt="" class="about__img btn-gradient-1">
+            </div>
+            <div class="about__data">
+                <h2 class="section__title about__title">
+                    Over ons & <br> ons project
+                </h2>
+
+                <p class="about__description">
+                    Hier schrijf je iets over jullie team, je opleiding, het project/de opdracht, jullie inspiratie,
+                    enzovoort. Hieronder is plaats voor een lijstje:
+                </p>
+
+                <div class="about__details">
+                    <p class="about__details-description">
+                        <i class="ri-checkbox-fill about__details-icon"></i>
+                        Iets wat je zeker wil vermelden hier.
+                    </p>
+                    <p class="about__details-description">
+                        <i class="ri-checkbox-fill about__details-icon"></i>
+                        Iets wat je zeker wil vermelden hier.
+                    </p>
+                    <p class="about__details-description">
+                        <i class="ri-checkbox-fill about__details-icon"></i>
+                        Iets wat je zeker wil vermelden hier.
+                    </p>
+                    <p class="about__details-description">
+                        <i class="ri-checkbox-fill about__details-icon"></i>
+                        Iets wat je zeker wil vermelden hier.
+                    </p>
+                </div>
+
+                <a href="#contact" class="button--link button--flex">
+                    Get it now <i class="ri-arrow-right-down-line button__icon"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== STEPS ====================-->
+    <section class="steps section container">
+        <div class="steps__bg">
+            <h2 class="section__title-center steps__title">
+                Waarom is ons product <br> perfect voor jou?
+            </h2>
+
+            <div class="steps__container grid">
+                <div class="steps__card">
+                    <div class="steps__card-number">01</div>
+                    <h3 class="steps__card-title">Reden 1</h3>
+                    <p class="steps__card-description">
+                        Hier schrijf je een eerste goede reden om jullie product te gebruiken.
+                    </p>
+                </div>
+
+                <div class="steps__card">
+                    <div class="steps__card-number">02</div>
+                    <h3 class="steps__card-title">Reden 2</h3>
+                    <p class="steps__card-description">
+                        Hier schrijf je een tweede goede reden om jullie product te gebruiken.
+                    </p>
+                </div>
+
+                <div class="steps__card">
+                    <div class="steps__card-number">03</div>
+                    <h3 class="steps__card-title">Reden 3</h3>
+                    <p class="steps__card-description">
+                        Hier schrijf je een derde goede reden om jullie product te gebruiken.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== PRODUCTS ====================-->
+    <section class="product section container" id="products">
+        <h2 class="section__title-center">
+            Kies het pakket <br> dat bij je past
+        </h2>
+
+        <p class="product__description">
+            Dit onderdeel is enkel nuttig als jullie verschillende pakketten (combinaties) aanbieden die van prijs
+            verschillen.
+        </p>
+
+        <div class="product__container grid">
+            <article class="product__card">
+                <div class="product__circle"></div>
+
+                <img src="assets/img/pakket-placeholder.png" alt="" class="product__img">
+
+                <div class="product__details">
+                    <h3 class="product__title">Pakket 1</h3>
+                    <span class="product__price">€29.99</span>
+
+                    <div class="product__button product__button-hover">
+                        <i class="ri-information-2-line"></i>
+                    </div>
+
+                    <span class="product__tooltip">36 x 36 cm, zwart, materiaal, lijstje van accessoires, gewicht, enzovoort.</span>
+                </div>
+
+            </article>
+
+            <article class="product__card">
+                <div class="product__circle"></div>
+
+                <img src="assets/img/pakket-placeholder.png" alt="Pakket 2" class="product__img">
+
+                <h3 class="product__title">Pakket 2</h3>
+                <span class="product__price">€19.99</span>
+
+                <div class="product__button product__button-hover">
+                    <i class="ri-information-2-line"></i>
+                </div>
+
+                <span class="product__tooltip">36 x 36 cm, zwart, materiaal, lijstje van accessoires, gewicht, enzovoort.</span>
+            </article>
+
+        </div>
+    </section>
+
+    <!--==================== QUESTIONS ====================-->
+    <section class="questions section" id="faqs">
+        <h2 class="section__title-center questions__title container">
+            Antwoorden op enkele <br> vaak gestelde vragen
+        </h2>
+
+        <div class="questions__container container grid">
+            <div class="questions__group">
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <i class="ri-add-line questions__icon"></i>
+                        <h3 class="questions__item-title">
+                            Welke vraag zouden klanten hebben?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Hier schrijf je een kort antwoord op deze vraag in enkele regels die kunnen worden
+                            opengeklikt door de gebruikers van de website.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <i class="ri-add-line questions__icon"></i>
+                        <h3 class="questions__item-title">
+                            Welke vraag zouden klanten hebben?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Hier schrijf je een kort antwoord op deze vraag in enkele regels die kunnen worden
+                            opengeklikt door de gebruikers van de website.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <i class="ri-add-line questions__icon"></i>
+                        <h3 class="questions__item-title">
+                            Welke vraag zouden klanten hebben?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Hier schrijf je een kort antwoord op deze vraag in enkele regels die kunnen worden
+                            opengeklikt door de gebruikers van de website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="questions__group">
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <i class="ri-add-line questions__icon"></i>
+                        <h3 class="questions__item-title">
+                            Welke vraag zouden klanten hebben?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Hier schrijf je een kort antwoord op deze vraag in enkele regels die kunnen worden
+                            opengeklikt door de gebruikers van de website.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <i class="ri-add-line questions__icon"></i>
+                        <h3 class="questions__item-title">
+                            Welke vraag zouden klanten hebben?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Hier schrijf je een kort antwoord op deze vraag in enkele regels die kunnen worden
+                            opengeklikt door de gebruikers van de website.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="questions__item">
+                    <header class="questions__header">
+                        <i class="ri-add-line questions__icon"></i>
+                        <h3 class="questions__item-title">
+                            Welke vraag zouden klanten hebben?
+                        </h3>
+                    </header>
+
+                    <div class="questions__content">
+                        <p class="questions__description">
+                            Hier schrijf je een kort antwoord op deze vraag in enkele regels die kunnen worden
+                            opengeklikt door de gebruikers van de website.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--==================== CONTACT ====================-->
+    <section class="contact section container" id="contact">
+        <div class="contact__container grid">
+            <div class="contact__box">
+                <h2 class="section__title">
+                    Contacteer ons voor meer info of plaats je bestelling
+                </h2>
+
+                <div class="contact__data">
+                    <div class="contact__information">
+                        <h3 class="contact__subtitle">Stuur ons een e-mail</h3>
+                        <span class="contact__description">
+                            <i class="ri-mail-line contact__icon"></i>
+                            <a href="mailto:user@email.com" class="contact__email">user@email.com</a>
+                            <!--EMAIL AANVULLEN-->
+                        </span>
+                        <h3 class="contact__subtitle">Volg onze socials</h3>
+                        <ul class="contact__social">
+                            <li>
+                                <a href="https://www.facebook.com/">
+                                    <i class="ri-facebook-fill contact__icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/">
+                                    <i class="ri-instagram-line contact__icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/">
+                                    <i class="ri-linkedin-fill contact__icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <form action="/send-email" method="post" class="contact__form">
+                <div class="contact__inputs">
+                    <div class="contact__content">
+                        <input type="text" id="name" placeholder=" " class="contact__input" required
+                               autocomplete="name">
+                        <label for="name" class="contact__label">Naam</label>
+                    </div>
+
+                    <div class="contact__content">
+                        <input type="email" id="email" placeholder=" " class="contact__input" required
+                               autocomplete="email">
+                        <label for="email" class="contact__label">E-mail</label>
+                    </div>
+
+                    <div class="contact__content">
+                        <input type="text" id="subject" placeholder=" " class="contact__input" required
+                               autocomplete="off">
+                        <label for="subject" class="contact__label">Onderwerp</label>
+                    </div>
+
+                    <div class="contact__content contact__area">
+                        <textarea name="message" id="message" placeholder=" " class="contact__input" required
+                                  autocomplete="off"></textarea>
+                        <label for="message" class="contact__label">Boodschap</label>
+                    </div>
+                </div>
+
+                <button class="button button--flex">
+                    Verzenden
+                    <i class="ri-arrow-right-up-line button__icon"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<!--==================== FOOTER ====================-->
+<footer class="footer section">
+    <div class="footer__container container grid">
+        <div class="footer__content">
+            <div class="footer__logo">
+                <object data="assets/img/magnotforget_logo.svg" width="100%" height="auto" class="footer__logo-mf"></object>
+                <p>met ondersteuning van</p>
+
+                <div class="footer__logo-support">
+                    <a href="https://www.vlajo.org/" target="_blank">
+                        <object data="assets/img/logo_vlajo.svg" width="100%" height="auto"></object>
+                    </a>
+                    <a href="https://pxl-business.pxl.be/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1172 336">
+                            <g id="Bg">
+                                <circle class="cls-2" cx="167.9" cy="167.8" r="156"/>
+                            </g>
+                            <g id="Logo">
+                                <circle class="cls-1" cx="167.9" cy="167.8" r="140"/>
+                                <path class="cls-2"
+                                      d="M111.3,123h-51.8v90.1h27.7v-27.2h16.4c17.8,0,31-7.6,34.4-23.5l-26.8-39.3h.1Z"/>
+                                <polygon class="cls-2"
+                                         points="180.6 165.4 209.5 123.1 179.2 123.1 115.7 213.1 148.1 213.1 164 186.3 179.4 213.1 212.8 213.1 180.6 165.4"/>
+                                <polygon class="cls-2"
+                                         points="151.8 123.1 119.2 123.1 145.7 160.2 160.6 139 151.8 123.1"/>
+                                <polygon class="cls-2"
+                                         points="279.2 190 239.4 190 239.4 123.1 211.6 123.1 211.6 197.6 222.2 213.1 279.2 213.1 279.2 190"/>
+                                <path class="cls-1"
+                                      d="M94.1,165.3c-.9,0-1.9-.4-2.6-1.1l-8.2-8.3c-2.7-2.7-3-7.1-.7-10.1,1.2-1.6,3-2.6,4.9-2.7,1.9-.1,3.8.6,5.2,2l1.4,1.4,1.3-1.3c1.3-1.4,3.1-2.1,5-2,1.9,0,3.6.9,4.8,2.4,2.5,2.9,2.4,7.6-.3,10.3l-8.2,8.3c-.7.7-1.7,1.1-2.6,1.1h0ZM94.5,161h0ZM87.9,147.8h0c-.7,0-1.3.4-1.7,1-.9,1.1-.7,2.9.3,3.9l7.7,7.8,7.8-7.8c1-1.1,1.1-2.8,0-4-.5-.5-1.1-.8-1.7-.8s-1.3.2-1.7.7l-4.4,4.5-4.5-4.6c-.5-.5-1-.7-1.7-.7h-.1Z"/>
+                            </g>
+                            <g id="Text">
+                                <path d="M438.9,202.4c-8.3,9.9-22.7,10.8-34.2,10.8h-69v-89.7h75.3c9,0,20.1.6,25.4,9.4,1.3,2,3,5.8,3,11.6s-.1,7.7-3.8,12.4c-2,2.5-6.1,6-13.3,7.7,5.6.9,10.7,1.8,15.1,5.6,5.3,4.4,6.6,9.9,6.6,16.5s-.1,9.4-5.2,15.6h0ZM404.1,177.1h-36.2v15.6h33.8c.3,0,2.8,0,4.4-.4,4.1-.9,6.1-3.8,6.1-7.9,0-7.2-6-7.4-8.1-7.4h0ZM407.8,146.9c-1.7-2.8-4.7-3.2-7.6-3.2h-32v14h29.7c3.3,0,8,.3,10-3.4.5-1,.9-2.4.9-3.6s0-2.2-1-3.8Z"/>
+                                <path d="M551.5,204.7c-7.7,7.2-20.7,11.7-43.4,11.7s-10.8,0-18.7-1c-3-.4-21.5-2.5-29.8-15.2-5-7.5-4.7-16.1-4.7-19v-57.5h32v50.9c0,6.5.5,12.2,5.7,16.9,5.6,5.1,13.3,5.1,15.5,5.1s9.8-.1,15.1-4.7c2.3-2,3.4-4.4,3.8-5.3,1.9-4.1,2-8.1,2-12.4v-50.4h32v47c0,12.2.4,24.9-9.5,34.2v-.3Z"/>
+                                <path d="M662.4,201.3c-7.5,9.4-21,14.6-45.5,14.6s-33-5-39.6-12.4c-6.1-6.7-6.7-13.7-7.2-17l31.6-.8c.3,1.5.9,3.9,4.1,6.2,3,2.3,7.5,3.9,15.9,3.9s7.4-.4,10.4-1.9c2.7-1.4,5.1-3.9,5.1-7.1s-.9-4.7-5.1-6.5c-2.2-.9-7.5-1.9-13.7-3-7-1.4-14.1-2.5-21.1-4.4-7.6-2.2-14.6-4.8-19.2-11.8-3.3-5.1-3.6-10.2-3.6-12.4,0-4.8,1.4-9.3,3.9-13.2,5.8-9.4,18.3-15.6,41.3-15.6s20.4,1,27.9,3.6c3.2,1,6.1,2.5,8.8,4.6,8.5,6.2,9.8,14.1,10.4,18l-31.4,1.8c-.4-1-.6-2-1.1-2.9-2-3.4-6.6-5.5-14.7-5.5s-8.3-.1-12.1,3c-1.8,1.4-2,3.4-2,4.3s.3,2.7,2,4.1c4.4,3.6,20.3,5.7,36.3,9.4,10.3,2.4,15.1,5.1,18.5,8.8,2.3,2.3,6,7,6,15.4s-2.2,12.3-6,17v-.2Z"/>
+                                <path d="M679.7,213.2v-89.7h32.1v89.7h-32.1Z"/>
+                                <path d="M801.7,213.2l-42.5-48v48h-31.7v-89.7h26.5l42.8,47.2v-47.2h31.6v89.7h-26.7,0Z"/>
+                                <path d="M843.6,213.2v-89.7h94.6v20.1h-62.5v14.7h57.8v20.2h-57.8v14.4h63.6v20.3h-95.8.1Z"/>
+                                <path d="M1035.4,201.3c-7.5,9.4-21,14.6-45.5,14.6s-33-5-39.6-12.4c-6.1-6.7-6.7-13.7-7.2-17l31.6-.8c.3,1.5.9,3.9,4.1,6.2,3,2.3,7.5,3.9,15.9,3.9s7.4-.4,10.4-1.9c2.7-1.4,5.1-3.9,5.1-7.1s-.9-4.7-5.1-6.5c-2.2-.9-7.5-1.9-13.7-3-7-1.4-14.1-2.5-21.1-4.4-7.6-2.2-14.6-4.8-19.2-11.8-3.3-5.1-3.6-10.2-3.6-12.4,0-4.8,1.4-9.3,3.9-13.2,5.8-9.4,18.3-15.6,41.3-15.6s20.4,1,27.9,3.6c3.2,1,6.1,2.5,8.8,4.6,8.5,6.2,9.8,14.1,10.4,18l-31.4,1.8c-.4-1-.6-2-1.1-2.9-2-3.4-6.6-5.5-14.7-5.5s-8.3-.1-12.1,3c-1.8,1.4-2,3.4-2,4.3s.3,2.7,2,4.1c4.4,3.6,20.3,5.7,36.3,9.4,10.3,2.4,15.1,5.1,18.5,8.8,2.3,2.3,6,7,6,15.4s-2.2,12.3-6,17v-.2Z"/>
+                                <path d="M1138.5,201.3c-7.5,9.4-21,14.6-45.5,14.6s-33-5-39.6-12.4c-6.1-6.7-6.7-13.7-7.2-17l31.6-.8c.3,1.5.9,3.9,4.1,6.2,3,2.3,7.5,3.9,15.9,3.9s7.4-.4,10.4-1.9c2.7-1.4,5.1-3.9,5.1-7.1s-.9-4.7-5.1-6.5c-2.2-.9-7.5-1.9-13.7-3-7-1.4-14.1-2.5-21.1-4.4-7.6-2.2-14.6-4.8-19.2-11.8-3.3-5.1-3.6-10.2-3.6-12.4,0-4.8,1.4-9.3,3.9-13.2,5.8-9.4,18.3-15.6,41.3-15.6s20.4,1,27.9,3.6c3.2,1,6.1,2.5,8.8,4.6,8.5,6.2,9.8,14.1,10.4,18l-31.4,1.8c-.4-1-.6-2-1.1-2.9-2-3.4-6.6-5.5-14.7-5.5s-8.3-.1-12.1,3c-1.8,1.4-2,3.4-2,4.3s.3,2.7,2,4.1c4.4,3.6,20.3,5.7,36.3,9.4,10.3,2.4,15.1,5.1,18.5,8.8,2.3,2.3,6,7,6,15.4s-2.2,12.3-6,17v-.2Z"/>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">Adres</h3>
+
+            <ul class="footer__data">
+                <li class="footer__information">MagnotForget Office</li>
+                <li class="footer__information">Straatnaam nr</li>
+                <li class="footer__information">ZIP Stad</li>
+            </ul>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">Contact</h3>
+
+            <div class="footer__data">
+                <span class="footer__information">
+                <i class="ri-mail-line contact__icon"></i>  user@email.com</span> <!--EMAIL AANVULLEN-->
+
+                <span class="footer__information">
+                <i class="ri-phone-line contact__icon"></i>  +32 475 555 555</span>
+            </div>
+
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">
+                Wij aanvaarden
+            </h3>
+
+            <div class="footer__cards">
+                <img src="assets/img/card1.png" alt="" class="footer__card">
+                <img src="assets/img/card2.png" alt="" class="footer__card">
+                <img src="assets/img/card3.png" alt="" class="footer__card">
+            </div>
+        </div>
+    </div>
+
+    <p class="footer__copy">Made by HelEvX.</p>
+</footer>
+
+<!--=============== SCROLL UP ===============-->
+<a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-fill scrollup__icon"></i>
+</a>
+
+<!--=============== SCROLL REVEAL ===============-->
+<script src="assets/js/scrollreveal.min.js"></script>
+
+<!--=============== VIDEO POPUP ===============-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

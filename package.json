@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@icon/remixicon-line": "^2.5.0-alpha.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemailer": "^6.9.13",
+    "remixicon": "^4.2.0",
+    "scrollreveal": "^4.0.9"
+  }
+}
