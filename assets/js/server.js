@@ -13,8 +13,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Middleware to parse form data
 app.use(express.urlencoded({ extended: false }));
-
 // Route to handle form submissions
+
 app.post('/send-email', (req, res) => {
     const { name, email, subject, message } = req.body;
 
@@ -30,7 +30,7 @@ app.post('/send-email', (req, res) => {
     // Email content
     const mailOptions = {
         from: process.env.EMAIL_USER,
-        to: process.env.EMAIL_RECIPIENT,
+        to: 'magnotforget@gmail.com', // Set recipient email address here
         subject: subject,
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     };
@@ -42,11 +42,13 @@ app.post('/send-email', (req, res) => {
             res.status(500).send('Error: Je bericht kon niet verzonden worden.');
         } else {
             console.log('Email sent: ' + info.response);
-            // Send a success message back to the client
-            res.status(200).send('Verzonden. Bedankt voor je bericht!');
+            // Redirect the user to their email client
+            const mailtoLink = `mailto:magnotforget@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
+            res.redirect(mailtoLink);
         }
     });
 });
+
 
 // Start the server
 app.listen(port, () => {
